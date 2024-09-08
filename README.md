@@ -11,6 +11,14 @@ StreamLocations is an Android application that uses Google Maps and gRPC to stre
 - Kotlin Coroutines and Flow for managing data streams
 - ProtoBuf for efficient data serialization
 
+## App Demo 📸
+
+Explore the app's interface through this demo video:
+
+<img src="https://github.com/abhishekdubey331/StreamLocations-gRPC/blob/main/demo.gif" width="700"/>
+
+
+
 ## Project Structure
 
 - **Data Layer**: Includes the `LocationRepository` and API integration using gRPC.
