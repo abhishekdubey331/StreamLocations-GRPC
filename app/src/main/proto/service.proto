@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package location;
+
+option java_package = "com.example.streamlocations.data.location";
+
+message LocationRequest {
+  string userId = 1;
+}
+
+message UserLocation {
+  string userId = 1;
+  double longitude = 2;
+  double latitude = 3;
+  uint64 timestamp  = 4; //unix
+}
+
+service LocationService {
+  rpc GetLocation(LocationRequest) returns (stream UserLocation) {}
+}
